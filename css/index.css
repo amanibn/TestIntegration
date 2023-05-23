@@ -24,7 +24,8 @@ body,
 }
 
 .slide1 {
-  background-image: url("https://www.unesourisetmoi.info/net/galeries/paysages10/plage_beach_wallpaper_hd_free_02.jpg");
+  /* background-image: url("https://www.unesourisetmoi.info/net/galeries/paysages10/plage_beach_wallpaper_hd_free_02.jpg"); */
+  background-image: url("../images/Untitled-4.jpg");
 }
 .auth-div {
   /* background-image: url("https://www.idbibank.in/assets/images/asp-pla-c-c-banner.png"); */
@@ -77,7 +78,7 @@ body,
 }
 
 
-#about .col-5{
+#about .col-md-5{
     background-color: orange;
 }
 
@@ -191,18 +192,16 @@ background-color: #dedede00;
 }
 hr { display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;}
 .image--cover {
-    top: 144px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    /* margin: 20px; */
     object-fit: cover;
     object-position: center right;
     position: absolute;
-    /* right: 0; */
-    left: 31px;
+
     z-index: 999;
 }
+
 .amont {
     top: 144px;
     position: absolute;
@@ -245,11 +244,12 @@ hr { display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: au
 }
 .btn-pub{
     border-radius: 50px;
+    background-color: #fff;
 }
 
 .row-hebergement .col-md-7{
 
-background: linear-gradient(#a02fcc80, #a02fcc80), url("https://www.unesourisetmoi.info/net/galeries/paysages10/plage_beach_wallpaper_hd_free_02.jpg")
+background: linear-gradient(#a02fcc80, #a02fcc80), url("../images/pexels-photo-417074.jpeg")
 
 
 }
@@ -385,7 +385,7 @@ color: #fff;
 }
 /******************************footer***********************************/
 #approach span{
-        font-family: system-ui;
+        /* font-family: system-ui; */
     font-size: 2.5rem;
     font-weight: bold;
     line-height: 1.1;
@@ -398,14 +398,28 @@ color: #fff;
     color: #fff;
     font-weight: 600;
 }
-.fa-dollar-sign{
-    border-radius: 50px;
-    padding: 8px 22px;
+#approach span[class*="fa"]{
+        position: relative;
+    line-height: 37px;
+    overflow: visible;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+   width: 40px;
+    height: 40px;
     text-align: center;
     color: #fff;
-    font-size: 4em;
+    font-size: 2em !important;
+    border-radius: 50%;
 }
-.fa-face-grin{
+.fa-dollar-sign:before, .fa-dollar:before, .fa-usd:before,
+.fa-face-grin:before, .fa-grin:before,
+.fa-building:before,
+.fa-home:before, .fa-house:before {
+    vertical-align: middle;
+}
+/* .fa-face-grin{
         border-radius: 50px;
     padding: 8px;
     text-align: center;
@@ -425,7 +439,7 @@ color: #fff;
     text-align: center;
     color: #fff;
     font-size: 4em;
-}
+} */
 /****************Colors********************/
 .bg-gr-color{
 background-color: #01cfa8;
@@ -459,4 +473,77 @@ background-color: #554b90;
    position: absolute;
     right: 9px;
     padding: 4px; 
+}
+/*************************Media queries*******************************/
+header{
+    width: 100%;
+    /* right: 0; */
+    text-align: right;
+    position: fixed;
+    align-items: flex-end;
+    justify-content: flex-end;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    line-height: 15px;
+}
+.Content{
+   overflow-x: hidden;
+    margin-top: 100px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.image--cover {
+    top: 234px;
+    left: 31px;
+}
+
+h1{
+    font-size: .9em !important;
+}
+#approach span {
+    font-size: 1.5rem;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .image--cover {
+    top: 312px;
+    left: 31px;
+}
+#approach span {
+    font-size: 1.5rem;
+}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+ .image--cover {
+    top: 73px;
+    left: 31px;
+}
+#approach span {
+    font-size: 1.5rem;
+}
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .image--cover {
+    top: 108px;
+    left: 31px;
+}
+#approach span {
+    font-size: 2rem;
+}
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ .image--cover {
+    top: 144px;
+    left: 31px;
+}
 }

@@ -20,10 +20,11 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 </head>
 
 <body>
+    <header>
     <div class="topnav col-md-12 p-3">
         <div class="btn-group float-right" role="group" aria-label="Basic example">
             <button type="button" class="btn btn-secondary btn-sm btn-help bg-yel-color">AIDE</button>
@@ -32,8 +33,13 @@
         </div>
 
     </div>
-    <nav class="navbar navbar-expand-lg">
-        <div class="collapse navbar-collapse" id="navbarText">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">ANNONCER <span class="sr-only">(current)</span></a>
@@ -47,11 +53,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">CONNEXION</a>
                 </li>
+
+
             </ul>
+
         </div>
     </nav>
+    </header>
     <div class="Content">
-        <section id="about">
+    <section id="about">
+        <div class="container">
             <div class="row p-3 d-flex justify-content-center">
                 <form class="form-inline" action="/action_page.php">
                     <input type="email" class="form-control" id="email" placeholder="Enter Username" name="email">
@@ -81,330 +92,351 @@
                     </button>
                 </form>
             </div>
+        </div>
+        <div class="row">
+            <div class="wrap">
+                <div id="slider">
+                    <div class="slide slide1">
+                        <div class="slide-content">
+                            <h1>DECOUVRIR LE MONDE PAR LES VOYAGES</h1>
+                            <button class="btn btn-singup bg-gr-color">INSCRIVEZ-VOUS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7 text-center p-3 bg-yel-color">EXPERIENCES DE VOYAGE INCROYABLES</div>
+            <div class="col-md-5 text-center p-3">A PROPOS</div>
+        </div>
+    </section>
+    <section id="temoignage">
+
+        <div class="container">
             <div class="row">
-                <div class="wrap">
-                    <div id="slider">
-                        <div class="slide slide1">
-                            <div class="slide-content">
-                                <h1>DECOUVRIR LE MONDE PAR LES VOYAGES</h1>
-                                <button class="btn btn-singup bg-gr-color">INSCRIVEZ-VOUS</button>
-                            </div>
+                <div class="col-md-6 p-3">
+                    <span>EXPERIENCES</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>TEMOIGNAGES</span>
+                </div>
+                <div class="col-md-6 text-right p-3"><button class="btn btn-announce">ANNONCER</button></div>
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/COOKING-CLASS-PROMO-2.jpg" alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
                         </div>
+
                     </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-2.jpg"
+                            alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/istockphoto-498375904-612x612.jpg" alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/friends.jpg" alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/360_F_207341044_g8C1EHKyGiAUDr5KDykyUdgthFRwRsMx.jpg"
+                            alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top"
+                            src="./images/trouver-equilibre-entrainement-homme-exterieur-contexte-urbain-vous-devez-etirer-muscles-apres-entrainement-pour-obtenir-meilleur-resultat-athlete-equilibre-jambe-tout-s-etirant-etirement-agr.jpg"
+                            alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/flowers-276014_960_720.jpg" alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3 mb-5">
+                    <div class="card">
+                        <img class="card-img-top" src="./images/pexels-photo-417074.jpeg" alt="Bologna">
+                        <div class="card-body">
+                            <h4 class="card-title">Bologna</h4>
+                            <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Vivamus blandit, nulla ac lacinia elementum</p>
+
+                        </div>
+
+                    </div>
+                    <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
+                        class="image--cover">
+                    <span class="amont">35$</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="features" class="m-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center m-3">
+                    <button class="bnt btn-hebergement">ROUS LES HEBERGEMENTS</button>
+                </div>
+                <div class="col-md-12 text-center m-3">
+                    <h2>UN VOYAGE REVE</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7 text-center p-3 bg-yel-color">EXPERIENCES DE VOYAGE INCROYABLES</div>
-                <div class="col-md-5 text-center p-3">A PROPOS</div>
-            </div>
-        </section>
-        <section id="temoignage">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 p-3">
-                        <span>EXPERIENCES</span>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <span>TEMOIGNAGES</span>
-                    </div>
-                    <div class="col-md-6 text-right p-3"><button class="btn btn-announce">ANNONCER</button></div>
-                </div>
-            </div>
-            <hr />
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top" src="./images/COOKING-CLASS-PROMO-2.jpg" alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top"
-                                src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/bologna-2.jpg"
-                                alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top" src="./images/istockphoto-498375904-612x612.jpg" alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top" src="./images/surfcasting-1.jpg" alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top"
-                                src="./images/360_F_207341044_g8C1EHKyGiAUDr5KDykyUdgthFRwRsMx.jpg" alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top"
-                                src="./images/trouver-equilibre-entrainement-homme-exterieur-contexte-urbain-vous-devez-etirer-muscles-apres-entrainement-pour-obtenir-meilleur-resultat-athlete-equilibre-jambe-tout-s-etirant-etirement-agr.jpg"
-                                alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top" src="./images/flowers-276014_960_720.jpg" alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-                    <div class="col-sm-8 col-md-3 col-lg-3 mb-5">
-                        <div class="card">
-                            <img class="card-img-top" src="./images/pexels-photo-417074.jpeg" alt="Bologna">
-                            <div class="card-body">
-                                <h4 class="card-title">Bologna</h4>
-                                <h6 class="card-subtitle mb-2 gr-color">Avec Alex</h6>
-                                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit. Vivamus blandit, nulla ac lacinia elementum</p>
-
-                            </div>
-
-                        </div>
-                        <img src="https://i.kinja-img.com/gawker-media/image/upload/gd8ljenaeahpn0wslmlz.jpg"
-                            class="image--cover">
-                        <span class="amont">35$</span>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="features" class="m-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center m-3">
-                        <button class="bnt btn-hebergement">ROUS LES HEBERGEMENTS</button>
-                    </div>
-                    <div class="col-md-12 text-center m-3">
-                        <h2>UN VOYAGE REVE</h2>
-                    </div>
-                    </div>
+                <div class="col-md-6 mb-4">
                     <div class="row">
-                    <div class="col-md-6 mb-4">
-                        <div class="row">
-                            <div class="col-md-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/tablette-en-milieu-de-soins.png"
-                                        alt="Bologna">
-                                    <button class="btn btn-hebergement-orange bg-or-color text-center"> Facilité d'utilisation<i class="fa-solid fa-angle-right"></i></button>
-                                </div>
-                                
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <img class="card-img-top" src="./images/tablette-en-milieu-de-soins.png" alt="Bologna">
+                                <button class="btn btn-hebergement-orange bg-or-color text-center"> Facilité
+                                    d'utilisation<i class="fa-solid fa-angle-right"></i></button>
                             </div>
-                            <div class="col-md-6 mb-4">
-                                <div class="card">
-                                    <img class="card-img-top"
-                                        src="./images/ordinateur-de-pc-de-tablette-d-utilisation-d-homme-d-affaires-24948341.jpg"
-                                        alt="Bologna">
-                                    <button class="btn text-left btn-hebergement-green bg-gr-color text-center"> Esprit tranquille <i class="fa-solid fa-angle-right"></i></button>
 
-                                </div>
-                            </div>
-                            <div class="col-md-12 auth-div">
-                                <span class="auth-heading">
-                                    Authentification<br>
-                                    sécurisée<br>
-                                    de l'hébergeur<br>
-                                    & de ses invités
-                                    </span>
-                            </div>
                         </div>
-
-                    </div>
-                    <div class="col-md-6 mb-4">
-                        <div class="box bg-image-with-overlay text-center d-flex align-items-center">
-                            <div class="col-md-12">
-                                <span class="text-center">LA PUBLICATION DE VOTRE HÉBERGEMENTS EST
-                                    <b>GRATUITE!</b></span><br>
-                                    <button class="btn btn-pub bg-yel-color">PUBLIER UN HÉBERGEMENT</button>
+                        <div class="col-md-6 mb-4">
+                            <div class="card">
+                                <img class="card-img-top"
+                                    src="./images/ordinateur-de-pc-de-tablette-d-utilisation-d-homme-d-affaires-24948341.jpg"
+                                    alt="Bologna">
+                                <button class="btn text-left btn-hebergement-green bg-gr-color text-center"> Esprit
+                                    tranquille <i class="fa-solid fa-angle-right"></i></button>
 
                             </div>
                         </div>
-
-
+                        <div class="col-md-12 auth-div">
+                            <span class="auth-heading">
+                                Authentification<br>
+                                sécurisée<br>
+                                de l'hébergeur<br>
+                                & de ses invités
+                            </span>
+                        </div>
                     </div>
+
                 </div>
-               
-                    <div class="row row-hebergement">
-                        <div class="col-md-5 p-3 text-center bg-purp-color">
-                            <span>
-                                Annoncez votre hébergement <br><b>SUR LES MEILLEURS SITES</b>
-                                <button class="btn btn-pub purp-color"> DIFFUSER MAINTENANT</button>
-                            </span></div>
-                        <div class="col-md-7 p-3">
+                <div class="col-md-6 mb-4">
+                    <div class="box bg-image-with-overlay text-center d-flex align-items-center">
+                        <div class="col-md-12">
+                            <span class="text-center">LA PUBLICATION DE VOTRE HÉBERGEMENTS EST
+                                <b>GRATUITE!</b></span><br>
+                            <button class="btn btn-pub bg-yel-color">PUBLIER UN HÉBERGEMENT</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="row row-hebergement">
+                <div class="col-md-5 p-3 text-center bg-purp-color">
+                    <span>
+                        Annoncez votre hébergement <br><b>SUR LES MEILLEURS SITES</b>
+                        <button class="btn btn-pub purp-color"> DIFFUSER MAINTENANT</button>
+                    </span>
+                </div>
+                <div class="col-md-7 p-3">
+                    <p>
+                        Des milliers de voyageurs cherchent quotidiennement à réserver des hébergements uniques pour
+                        rendre leur séjour
+                        inoubliable. Notre présence sur internet et les médias sociaux, nos partenariats multiples avec
+                        les agences de voyage,
+                        organismes à vocation touristique, hôtels et restaurateurs locaux ainsi que nos agent
+                        promotionnels sur le terrain
+                        assurent que le voyageurs trouvent facilement les hébergements qui leurs sont proposées.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="approach">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12m-0 p-0">
+                <img class="img-responsive" src="./images/building-102840_1280.jpg" alt="Bologna">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12m-0 p-0">
+                <div class="row h-100">
+                    <div class="col-md-10 mr-auto ml-auto d-flex align-items-center">
+                        <div class="col-md-12">
+                            <span class="fa-solid fa-dollar-sign bg-purp-color"></span>
+
+                            <span class="purp-color">
+                                GAGNEZ UN
+                                REVENU ADDITIONNEL</span>
                             <p>
-                                Des milliers de voyageurs cherchent quotidiennement à réserver des hébergements uniques pour rendre leur séjour
-                                inoubliable. Notre présence sur internet et les médias sociaux, nos partenariats multiples avec les agences de voyage,
-                                organismes à vocation touristique, hôtels et restaurateurs locaux ainsi que nos agent promotionnels sur le terrain
-                                assurent que le voyageurs trouvent facilement les hébergements qui leurs sont proposées.
+                                Derrière elle se cachent ses gens. Ceux qui contribuent à la rendre si unique et qui lui
+                                donnent son
+                                caractère.
+                                Rendez-la plus humaine, plus chaleureuse et accueillante pour ceux qui la visitent en
+                                leur
+                                permettant une immersion
+                                authentique avec les gens qui l'habitent!
+                            </p>
+                            <span class="fa-solid fa-face-grin bg-or-color"></span>
+                            <span class="or-color">FAITES DU VOYAGE UNE EXPÉRIENCE</span>
+                            <p>Rendez les souvenirs de veux qui voyagent plus riches en y laissant votre empreinte; des
+                                fous
+                                rires,
+                                des surprises, des
+                                rencontres. Encouragez les échanges culturels et le respect mutuel, conférant ainsi au
+                                voyage un
+                                aspect profondément
+                                social.</p>
                             </p>
                         </div>
                     </div>
-               
+                </div>
             </div>
-        </section>
-        <sction id="approach">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12m-0 p-0">
-                    <img class="img-responsive" src="./images/building-102840_1280.jpg"
-                        alt="Bologna">
+        </div>
+        <div class="row">
+            <div class="col-md-6 m-0 p-0">
+                <div class="row h-100">
+                    <div class="col-md-10 mr-auto ml-auto mt-1 d-flex align-items-center">
+                        <div class="col-md-12">
+                            <span class="fa-solid fa-building bg-gr-color"></span>
+                            <span class="gr-color">GAGNEZ UN
+                                REVENU ADDITIONNEL
+                            </span>
+                            <p>
+                                Derrière elle se cachent ses gens. Ceux qui contribuent à la rendre si unique et qui lui
+                                donnent son
+                                caractère.
+                                Rendez-la plus humaine, plus chaleureuse et accueillante pour ceux qui la visitent en
+                                leur
+                                permettant une immersion
+                                authentique avec les gens qui l'habitent!
+                            </p>
+                            <span class="fa-solid fa-house bg-yel-color"></span>
+                            <span class="yel-color">FAITES DU VOYAGE UNE EXPÉRIENCE</span>
+                            <p>
+                                Rendez les souvenirs de veux qui voyagent plus riches en y laissant votre empreinte; des
+                                fous rires,
+                                des surprises, des
+                                rencontres. Encouragez les échanges culturels et le respect mutuel, conférant ainsi au
+                                voyage un
+                                aspect profondément
+                                social.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12m-0 p-0">
-                    <div class="row">
-                    <div class="col-md-10 mr-auto ml-auto d-print-table-cell text-left ">
-                    <i class="fa-solid fa-dollar-sign bg-purp-color"></i>
-
-                    <span class="purp-color">
-                        GAGNEZ UN
-                    REVENU ADDITIONNEL</span>
-                    <p>
-                    Derrière elle se cachent ses gens. Ceux qui contribuent à la rendre si unique et qui lui donnent son
-                    caractère.
-                    Rendez-la plus humaine, plus chaleureuse et accueillante pour ceux qui la visitent en leur
-                    permettant une immersion
-                    authentique avec les gens qui l'habitent!
-                    </p>
-                    <i class="fa-solid fa-face-grin bg-or-color"></i>
-                    <span class="or-color">FAITES DU VOYAGE UNE EXPÉRIENCE</span>
-                    <p>Rendez les souvenirs de veux qui voyagent plus riches en y laissant votre empreinte; des fous rires,
-                    des surprises, des
-                    rencontres. Encouragez les échanges culturels et le respect mutuel, conférant ainsi au voyage un
-                    aspect profondément
-                    social.</p>
-                    </p>
-                </div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-md-6 m-0 p-0">
-                    <div class="row">
-                        <div class="col-md-10 mr-auto ml-auto d-print-table-cell text-left mt-1">
-                <i class="fa-solid fa-building bg-gr-color"></i>
-                    <span class="gr-color">GAGNEZ UN
-                    REVENU ADDITIONNEL
-                </span>
-                <p>
-                    Derrière elle se cachent ses gens. Ceux qui contribuent à la rendre si unique et qui lui donnent son
-                    caractère.
-                    Rendez-la plus humaine, plus chaleureuse et accueillante pour ceux qui la visitent en leur
-                    permettant une immersion
-                    authentique avec les gens qui l'habitent!
-                </p>
-                <i class="fa-solid fa-house bg-yel-color"></i>
-                    <span class="yel-color">FAITES DU VOYAGE UNE EXPÉRIENCE</span>
-                    <p>
-                    Rendez les souvenirs de veux qui voyagent plus riches en y laissant votre empreinte; des fous rires,
-                    des surprises, des
-                    rencontres. Encouragez les échanges culturels et le respect mutuel, conférant ainsi au voyage un
-                    aspect profondément
-                    social.
-                </p>
-                </div>
-                </div>
-                </div>
-                <div class="col-md-6 m-0 p-0">
-                    <img class="img-responsive" src="./images/building-102840_1280.jpg" alt="Bologna">
-                </div>
-
             </div>
-        </sction>
-    </div>
+            <div class="col-md-6 m-0 p-0">
+                <img class="img-responsive" src="./images/Project-Ö-Cabin_N0A5906-889x592.jpg" alt="Bologna">
+            </div>
+
+        </div>
+    </section>
     <section id="subscribe" class="bg-yel-color">
-<div class="container">
-    <div class="row">
-        <div class="col-md-7 pt-3 pb-3">
-<span class="gr-color ft-size2">Inscrivez-vous</span><span class="ft-size2"> pour recevoir les nouveaux hébergements</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 pt-3 pb-3">
+                    <span class="gr-color ft-size2">Inscrivez-vous</span><span class="ft-size2"> pour recevoir les
+                        nouveaux
+                        hébergements</span>
+                </div>
+                <div class="col-md-5 pt-3 pb-3 d-flex justify-content-center">
+                    <input type="email" name="email" class="form-control" placeholder="Votre adresse courriel">
+                    <button class="btn bg-gr-color">SOUSCRIRE</button>
+                </div>
+            </div>
         </div>
-        <div class="col-md-5 pt-3 pb-3 d-flex justify-content-center">
-<input type="email" name="email" class="form-control" placeholder="Votre adresse courriel" >
-<button class="btn bg-gr-color">SOUSCRIRE</button>
-        </div>
-        </div>
-    </div>
-  
+
 
     </section>
+    </div>
+
     <footer class="footer-main bg-violet">
         <div class="container">
             <div class="row address-main">
